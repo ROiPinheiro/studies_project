@@ -23,3 +23,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+lint_staged:
+  "lib/**.dart": dart fix --apply && dart format --fix && dart analyze
