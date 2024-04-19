@@ -26,3 +26,5 @@ flutter:
 
 lint_staged:
   "lib/**.dart": dart fix --apply && dart format --fix && dart analyze
+
+scripts: derry.yaml
