@@ -12,12 +12,17 @@ A project to test some things and libs.
 - run `flutter devices`
 - run `flutter run -d {device name}`
 
-> Example:
->
-> `flutter devices`
+### Example:
+
+`# flutter devices`
+
+
 > The following devices were found:
-sdk gphone64 x86 64 (mobile) • emulator-5554 • android-x64    • Android 13 (API 33) (emulator)
-> `flutter run -d "emulator-5554"`
+> 
+> sdk gphone64 x86 64 (mobile) • emulator-5554 • android-x64    • Android 13 (API 33) (emulator)
+
+
+`# flutter run -d "emulator-5554"`
 
 ## Husky + Lint Staged
 
