@@ -1,1 +1,3 @@
+init: dart run husky install
+
 lint: dart fix --apply && dart format --fix .

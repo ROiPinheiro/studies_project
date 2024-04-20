@@ -1,16 +1,36 @@
 # studies_project
 
-A new Flutter project.
+A project to test some things and libs.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## How to Run
 
-A few resources to get you started if this is your first Flutter project:
+- clone this project
+- run `flutter pub get`
+- run `derry init`
+- create an android emulator or connect a physical phone on debug mode
+- run `flutter devices`
+- run `flutter run -d {device name}`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> Example:
+>
+> `flutter devices`
+> The following devices were found:
+sdk gphone64 x86 64 (mobile) • emulator-5554 • android-x64    • Android 13 (API 33) (emulator)
+> `flutter run -d "emulator-5554"`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Husky + Lint Staged
+
+Husky git-hooks with lint_staged are configure to execute dart clean-up commands on `pre-commit`
+
+## Derry commands
+
+> Derry is a script manager for Dart.
+
+Like `npm` scripts, `derry` can run scripts on dart project. On this project, all `derry` script are on [derry.yaml](./derry.yaml)
+
+All can be executed with `dart run derry {command}` or `derry {command}` if installed globally (see `derry` [docs](https://pub.dev/packages/derry) to more info).
+
+List of commands:
+
+- lint: execute `dart fix` and `dart lint` on all project. 
